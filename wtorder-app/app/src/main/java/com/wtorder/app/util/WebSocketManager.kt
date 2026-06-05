@@ -13,7 +13,7 @@ class WebSocketManager(private val client: OkHttpClient) {
     val messages: SharedFlow<String> = _messages.asSharedFlow()
 
     // 에뮬레이터 로컬 서버 주소
-    private val WS_URL = "ws://10.0.2.2:8080/ws/orders"
+    private val WS_URL = "ws://172.20.10.2:8080/ws/orders"
 
     fun connect() {
         if (webSocket != null) return

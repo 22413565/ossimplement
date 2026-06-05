@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 object RetrofitClient {
     // 에뮬레이터에서 로컬 서버 접속: 10.0.2.2
     // 실제 기기에서는 서버 PC의 IP 주소로 변경
-    private const val BASE_URL = "http://10.0.2.2:8080/"
+    private const val BASE_URL = "http://172.20.10.2:8080/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
